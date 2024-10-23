@@ -53,7 +53,7 @@ const Hero = () => {
         />
       </div>
       <motion.div
-        className="text-[7rem] leading-[6rem] lg:text-[9rem] lg:leading-[7rem] font-bangers text-center text-gray-300 relative shadow-[0_0_2px_#006039,inset_0_0_2px_#006039,0_0_5px_#006039,0_0_15px_#006039,0_0_30px_#006039] w-[25rem] h-[25rem] md:w-[30rem] md:h-[30rem] lg:w-[38rem] lg:h-[38rem]  flex-col flex justify-center items-center rounded-full"
+        className="text-[6rem] leading-[5rem] lg:text-[9rem] lg:leading-[7rem] font-bangers text-center text-gray-300 relative shadow-[0_0_2px_#006039,inset_0_0_2px_#006039,0_0_5px_#006039,0_0_15px_#006039,0_0_30px_#006039] w-[20rem] h-[20rem] md:w-[30rem] md:h-[30rem] lg:w-[35rem] lg:h-[35rem] xl:w-[38rem] xl:h-[38rem]  flex-col flex justify-center items-center rounded-full"
         animate={{
           boxShadow: [
             "0 0 2px #4CAF50, inset 0 0 2px #4CAF50, 0 0 5px #4CAF50, 0 0 15px #4CAF50, 0 0 30px #4CAF50", // Verde
