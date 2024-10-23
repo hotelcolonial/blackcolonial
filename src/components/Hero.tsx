@@ -7,8 +7,7 @@ import CountdownTimer from "./CountdownTimer";
 import BalloonBackground from "./BalloonBackground";
 
 const Hero = () => {
-  /*   balloons(); */
-
+  /* balloons();*/
   const duration = 15 * 1000,
     animationEnd = Date.now() + duration,
     defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
@@ -41,8 +40,10 @@ const Hero = () => {
     );
   }, 250);
   return (
-    <div className="padding-container background-pattern flex flex-col justify-between gap-8 items-center h-screen w-full bg-primary-black relative overflow-hidden">
-      <BalloonBackground />
+    <div className="  padding-container background-pattern flex flex-col justify-between gap-8 items-center h-screen w-full bg-primary-black relative overflow-hidden">
+      <div className="absolute w-full h-full z-20 hidden md:block">
+        <BalloonBackground />
+      </div>
       <div className="h-[9rem] w-[9rem] relative z-20">
         <Image
           alt="Hotel Colonial Logo"
@@ -55,9 +56,9 @@ const Hero = () => {
         className="text-[7rem] leading-[6rem] lg:text-[9rem] lg:leading-[7rem] font-bangers text-center text-gray-300 relative shadow-[0_0_2px_#006039,inset_0_0_2px_#006039,0_0_5px_#006039,0_0_15px_#006039,0_0_30px_#006039] w-[25rem] h-[25rem] md:w-[30rem] md:h-[30rem] lg:w-[38rem] lg:h-[38rem]  flex-col flex justify-center items-center rounded-full"
         animate={{
           boxShadow: [
-            "0 0 2px #006039, inset 0 0 2px #006039, 0 0 5px #006039, 0 0 15px #006039, 0 0 30px #006039",
-            "0 0 10px #ff0000, inset 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000",
-            "0 0 2px #006039, inset 0 0 2px #006039, 0 0 5px #006039, 0 0 15px #006039, 0 0 30px #006039",
+            "0 0 2px #4CAF50, inset 0 0 2px #4CAF50, 0 0 5px #4CAF50, 0 0 15px #4CAF50, 0 0 30px #4CAF50", // Verde
+            "0 0 10px #FFFFAE, inset 0 0 10px #FFFFAE, 0 0 20px #FFFFAE, 0 0 30px #FFFFAE, 0 0 40px #FFFFAE", // Amarillo claro
+            "0 0 2px #4CAF50, inset 0 0 2px #4CAF50, 0 0 5px #4CAF50, 0 0 15px #4CAF50, 0 0 30px #4CAF50", // Verde
           ],
         }}
         transition={{
@@ -66,18 +67,31 @@ const Hero = () => {
           repeatType: "reverse",
         }}
       >
-        <p className="text-xs font-quick uppercase mb-6 text-primary-green font-semibold">
+        <p className="neonText text-xs font-quick uppercase mb-6 text-primary-green font-semibold">
           Somente por tempo limitado
         </p>
-        <h2>Colonial</h2>
-        <h2>Black</h2>
-        <p className="font-cookie text-primary-green absolute left-[9rem] -mb-[12rem] md:left-[13rem] md:-mb-[14rem] lg:left-[17rem] lg:-mb-[15rem] lg:text-9xl -rotate-[20deg]">
+        <h2 className="">Colonial</h2>
+        <h2 className="">Black</h2>
+        <p className="neonText font-cookie text-primary-green absolute left-[9rem] -mb-[12rem] md:left-[13rem] md:-mb-[14rem] lg:left-[17rem] lg:-mb-[15rem] lg:text-9xl -rotate-[20deg]">
           Ofertas
         </p>
       </motion.div>
-      <div>
-        <CountdownTimer />
+      <div className="relative z-20 flex justify-center flex-col">
+        <div className="text-center text-gray-300 space-y-2 uppercase font-bold text-4xl">
+          <p className="">
+            Ofertas Incríveis, <span className="text-primary-green">Sem</span>{" "}
+            Truques!
+          </p>
+          <p className="text-2xl bg-primary-green px-3 mx-auto">
+            Venha aproveitar a autenticidade das nossas ofertas
+          </p>
+          <p className="text-base">
+            Junte-se a nós e faça parte deste clube{" "}
+            <span className="text-primary-green">colonial black</span>
+          </p>
+        </div>
       </div>
+      <CountdownTimer />
     </div>
   );
 };

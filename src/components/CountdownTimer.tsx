@@ -53,7 +53,7 @@ const CountdownTimer: React.FC = () => {
   const seconds = timeRemaining % 60;
 
   return (
-    <div className="flex gap-5">
+    <div className="flex gap-5 mx-auto">
       <ShowCountdown time={days} label="dias" />
       <ShowCountdown time={hours} label="horas" />
       <ShowCountdown time={minutes} label="minutos" />
