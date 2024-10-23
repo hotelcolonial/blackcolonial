@@ -77,15 +77,15 @@ const Hero = () => {
         </p>
       </motion.div>
       <div className="relative z-20 flex justify-center flex-col">
-        <div className="text-center text-gray-300 space-y-2 uppercase font-bold text-4xl">
+        <div className="text-center text-gray-300 space-y-2 uppercase font-bold text-2xl lg:text-4xl">
           <p className="">
             Ofertas Incríveis, <span className="text-primary-green">Sem</span>{" "}
             Truques!
           </p>
-          <p className="text-2xl bg-primary-green px-3 mx-auto">
+          <p className="text-base lg:text-2xl bg-primary-green px-3 mx-auto">
             Venha aproveitar a autenticidade das nossas ofertas
           </p>
-          <p className="text-base">
+          <p className="text-xs lg:text-base">
             Junte-se a nós e faça parte deste clube{" "}
             <span className="text-primary-green">colonial black</span>
           </p>
