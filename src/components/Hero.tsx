@@ -7,10 +7,10 @@ import CountdownTimer from "./CountdownTimer";
 import BalloonBackground from "./BalloonBackground";
 
 const Hero = () => {
-  /* balloons();*/
+  /*   balloons(); */
   const duration = 15 * 1000,
     animationEnd = Date.now() + duration,
-    defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
+    defaults = { startVelocity: 30, spread: 100, ticks: 60, zIndex: 0 };
 
   function randomInRange(min: number, max: number) {
     return Math.random() * (max - min) + min;
@@ -23,7 +23,7 @@ const Hero = () => {
       return clearInterval(interval);
     }
 
-    const particleCount = 5 * (timeLeft / duration);
+    const particleCount = 10 * (timeLeft / duration);
 
     // since particles fall down, start a bit higher than random
     confetti(
@@ -40,10 +40,10 @@ const Hero = () => {
     );
   }, 250);
   return (
-    <div className="  padding-container background-pattern flex flex-col justify-between gap-8 items-center h-screen w-full bg-primary-black relative overflow-hidden">
-      <div className="absolute w-full h-full z-20 hidden md:block">
+    <div className="padding-container gap-12 background-pattern flex flex-col justify-between lg:gap-8 items-center min-h-screen w-full bg-primary-black relative overflow-hidden">
+      {/*  <div className="absolute w-full h-full z-20 hidden md:block">
         <BalloonBackground />
-      </div>
+      </div> */}
       <div className="h-[9rem] w-[9rem] relative z-20">
         <Image
           alt="Hotel Colonial Logo"
@@ -72,7 +72,7 @@ const Hero = () => {
         </p>
         <h2 className="">Colonial</h2>
         <h2 className="">Black</h2>
-        <p className="neonText font-cookie text-primary-green absolute left-[9rem] -mb-[12rem] md:left-[13rem] md:-mb-[14rem] lg:left-[17rem] lg:-mb-[15rem] lg:text-9xl -rotate-[20deg]">
+        <p className="neonText text-[6rem] font-cookie text-primary-green absolute left-[8.5rem] -mb-[12rem] md:left-[13rem] md:-mb-[14rem] lg:left-[17rem] lg:-mb-[15rem] lg:text-9xl -rotate-[20deg]">
           Ofertas
         </p>
       </motion.div>
