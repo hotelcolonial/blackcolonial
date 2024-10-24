@@ -53,7 +53,7 @@ const Hero = () => {
         />
       </div>
       <motion.div
-        className="text-[6rem] py-4 leading-[5rem] lg:text-[9rem] lg:leading-[7rem] font-bangers text-center text-gray-300 relative shadow-[0_0_2px_#006039,inset_0_0_2px_#006039,0_0_5px_#006039,0_0_15px_#006039,0_0_30px_#006039] w-[20rem] h-[20rem] md:w-[30rem] md:h-[30rem] lg:w-[35rem] lg:h-[35rem] xl:w-[38rem] xl:h-[38rem]  flex-col flex justify-center items-center rounded-full"
+        className="text-[6rem] py-4 leading-[5rem] xl:text-[9rem] xl:leading-[7rem] font-bangers text-center text-gray-300 relative shadow-[0_0_2px_#006039,inset_0_0_2px_#006039,0_0_5px_#006039,0_0_15px_#006039,0_0_30px_#006039] w-[20rem] h-[20rem] md:w-[30rem] md:h-[30rem] lg:w-[35rem] lg:h-[35rem] xl:w-[38rem] xl:h-[38rem]  flex-col flex justify-center items-center rounded-full"
         animate={{
           boxShadow: [
             "0 0 2px #4CAF50, inset 0 0 2px #4CAF50, 0 0 5px #4CAF50, 0 0 15px #4CAF50, 0 0 30px #4CAF50", // Verde
@@ -72,7 +72,7 @@ const Hero = () => {
         </p>
         <h2 className="">Colonial</h2>
         <h2 className="">Black</h2>
-        <p className="neonText  lg:text-[6rem] font-cookie text-primary-green absolute left-[8.5rem] -mb-[12rem] md:left-[13rem] md:-mb-[14rem] lg:left-[17rem] lg:-mb-[15rem] xl:text-9xl -rotate-[20deg]">
+        <p className="neonText lg:text-[4rem]  xl:text-[6rem] font-cookie text-primary-green absolute left-[8.5rem] -mb-[12rem] md:left-[13rem] md:-mb-[14rem] lg:left-[20rem] lg:-mb-[12rem] xl:left-[17rem] xl:-mb-[15rem] xl:text-9xl -rotate-[20deg]">
           Ofertas
         </p>
       </motion.div>
