@@ -53,7 +53,7 @@ const Hero = () => {
         />
       </div>
       <motion.div
-        className="text-[6rem] py-4 leading-[5rem] lg:text-[7rem] 2xl:text-[9rem] lg:leading-[6rem] 2xl:leading-[7rem] font-bangers text-center text-gray-300 relative shadow-[0_0_2px_#006039,inset_0_0_2px_#006039,0_0_5px_#006039,0_0_15px_#006039,0_0_30px_#006039] w-[20rem] h-[20rem] md:w-[30rem] md:h-[30rem] lg:w-[35rem] lg:h-[35rem]  flex-col flex justify-center items-center rounded-full"
+        className="text-[6rem] py-4 leading-[5rem] lg:text-[6.5rem] 2xl:text-[9rem] lg:leading-[5rem] 2xl:leading-[7rem] font-bangers text-center text-gray-300 relative shadow-[0_0_2px_#006039,inset_0_0_2px_#006039,0_0_5px_#006039,0_0_15px_#006039,0_0_30px_#006039] w-[20rem] h-[20rem] md:w-[30rem] md:h-[30rem] lg:w-[35rem] lg:h-[35rem]  flex-col flex justify-center items-center rounded-full"
         animate={{
           boxShadow: [
             "0 0 2px #4CAF50, inset 0 0 2px #4CAF50, 0 0 5px #4CAF50, 0 0 15px #4CAF50, 0 0 30px #4CAF50", // Verde
@@ -77,15 +77,15 @@ const Hero = () => {
         </p>
       </motion.div>
       <div className="relative z-20 flex justify-center flex-col">
-        <div className="text-center text-gray-300 space-y-2 uppercase font-bold text-2xl lg:text-4xl">
+        <div className="text-center text-gray-300 space-y-2 uppercase font-bold text-2xl 2xl:text-4xl">
           <p className="">
             Ofertas Incríveis, <span className="text-primary-green">Sem</span>{" "}
             Truques!
           </p>
-          <p className="text-base lg:text-2xl bg-primary-green px-3 mx-auto">
+          <p className="text-base 2xl:text-2xl bg-primary-green px-3 mx-auto">
             Venha aproveitar a autenticidade das nossas ofertas
           </p>
-          <p className="text-xs lg:text-base">
+          <p className="text-xs 2xl:text-base">
             Junte-se a nós e faça parte deste clube{" "}
             <span className="text-primary-green">colonial black</span>
           </p>
