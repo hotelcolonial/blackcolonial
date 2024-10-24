@@ -15,8 +15,8 @@ const BalloonBackground: React.FC = () => {
     { className: "absolute left-[85%] bottom-[20%] rotate-[-25deg]" },
     { className: "absolute left-[20%] bottom-[0%] rotate-[-15deg]" },
     { className: "absolute left-[85%] bottom-[0%] rotate-[-5deg]" },
-
-    { className: "absolute left-[65%] bottom-[70%] rotate-[deg]" },
+    { className: "absolute -left-[0%] bottom-[2%] rotate-[-5deg]" },
+    { className: "absolute left-[65%] bottom-[70%] rotate-[10deg]" },
   ];
 
   const balloons = balloonPositions.map((position, index) => (
