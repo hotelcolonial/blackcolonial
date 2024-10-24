@@ -40,10 +40,11 @@ const Hero = () => {
     );
   }, 250);
   return (
-    <div className="padding-container gap-12 background-pattern flex flex-col justify-between lg:gap-8 items-center min-h-screen w-full bg-primary-black relative overflow-hidden">
-      {/*  <div className="absolute w-full h-full z-20 hidden md:block">
+    <div className="padding-container md:h-screen gap-12 background-pattern flex flex-col justify-between lg:gap-8 items-center min-h-screen w-full bg-primary-black relative overflow-hidden">
+      <div className="absolute w-full h-full z-20 hidden md:block">
         <BalloonBackground />
-      </div> */}
+      </div>{" "}
+      *
       <div className="h-[9rem] w-[9rem] relative z-20">
         <Image
           alt="Hotel Colonial Logo"
