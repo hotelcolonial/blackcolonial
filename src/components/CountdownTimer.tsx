@@ -8,7 +8,7 @@ interface CountdownProps {
 const ShowCountdown: React.FC<CountdownProps> = ({ time, label }) => {
   return (
     <div className="text-center text-gray-300 font-black font-raleway">
-      <p className="text-7xl">{time}</p>
+      <p className="text-5xl xl:text-7xl">{time}</p>
       <p className="font-semibold text-gray-500">{label}</p>{" "}
       {/* Texto personalizado */}
     </div>

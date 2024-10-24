@@ -34,7 +34,7 @@ const BalloonBackground: React.FC = () => {
     </div>
   ));
 
-  return <div>{balloons}</div>;
+  return <>{balloons}</>;
 };
 
 export default BalloonBackground;
