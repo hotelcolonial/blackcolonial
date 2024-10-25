@@ -11,6 +11,7 @@ export default function Home() {
       <Membro />
       <Benefits />
       <Form />
+
       <footer>
         <p className="text-center font-raleway bg-primary-black text-xs py-6 text-gray-300">
           Hotel Colonial Iguaçu | 2024

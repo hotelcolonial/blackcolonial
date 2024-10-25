@@ -60,6 +60,9 @@ const Form = () => {
           Ao enviar este formulário, você autoriza o uso dos seus dados para que
           possamos entrar em contato sobre promoções e comunicações de marketing
         </p>
+        <div className="mx-auto h-[30rem]">
+          <iframe src="/form.html" width="100%" height="100%"></iframe>
+        </div>
       </form>
     </div>
   );
