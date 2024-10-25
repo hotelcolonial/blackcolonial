@@ -31,8 +31,24 @@
     repeating-linear-gradient(#0c0c0c55, #0c0c0c);
 }
 
+.background-pattern-secondary {
+  background-color: #2e3135;
+  opacity: 1;
+  background-image: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      #000000 4px
+    ),
+    repeating-linear-gradient(#0c0c0c55, #0c0c0c);
+}
+
 .neonText {
   color: #fff;
   text-shadow: 0 0 10px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa,
     0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.neonTextLight {
+  color: #d1d5db;
+  text-shadow: 0 0 10px #000000, 0 0 42px #000000, 0 0 151px #0fa;
 }

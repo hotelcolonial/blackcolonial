@@ -8,7 +8,7 @@ import BalloonBackground from "./BalloonBackground";
 
 const Hero = () => {
   /*   balloons(); */
-  const duration = 15 * 1000,
+  /*   const duration = 15 * 1000,
     animationEnd = Date.now() + duration,
     defaults = { startVelocity: 30, spread: 100, ticks: 60, zIndex: 0 };
 
@@ -38,28 +38,24 @@ const Hero = () => {
         origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 },
       })
     );
-  }, 250);
+  }, 250); */
   return (
-    <div className="padding-container lg:h-screen gap-12 background-pattern flex flex-col justify-between lg:gap-8 items-center min-h-screen w-full bg-primary-black relative overflow-hidden">
+    <div className="padding-container background-pattern flex flex-col justify-between gap-5 items-center min-h-screen w-full bg-primary-black relative overflow-hidden">
       <div className="absolute w-full h-full z-20 hidden md:block">
         <BalloonBackground />
       </div>{" "}
       <div className="h-[9rem] w-[9rem] relative z-20">
         <Image
           alt="Hotel Colonial Logo"
-          width={800}
-          height={800}
+          width={150}
+          height={150}
           src="/colonial-logo.png"
         />
       </div>
       <motion.div
-        className="text-[6rem] py-4 leading-[5rem] lg:text-[6.5rem] 2xl:text-[9rem] lg:leading-[5rem] 2xl:leading-[7rem] font-bangers text-center text-gray-300 relative shadow-[0_0_2px_#006039,inset_0_0_2px_#006039,0_0_5px_#006039,0_0_15px_#006039,0_0_30px_#006039] w-[20rem] h-[20rem] md:w-[30rem] md:h-[30rem] lg:w-[35rem] lg:h-[35rem]  flex-col flex justify-center items-center rounded-full"
+        className="text-[6rem] py-4 leading-[5rem] lg:text-[6.5rem] 2xl:text-[7.5rem] lg:leading-[5rem] 2xl:leading-[7rem] font-bangers text-center text-gray-300 relative  flex-col flex justify-center items-center rounded-full"
         animate={{
-          boxShadow: [
-            "0 0 2px #4CAF50, inset 0 0 2px #4CAF50, 0 0 5px #4CAF50, 0 0 15px #4CAF50, 0 0 30px #4CAF50", // Verde
-            "0 0 10px #FFFFAE, inset 0 0 10px #FFFFAE, 0 0 20px #FFFFAE, 0 0 30px #FFFFAE, 0 0 40px #FFFFAE", // Amarillo claro
-            "0 0 2px #4CAF50, inset 0 0 2px #4CAF50, 0 0 5px #4CAF50, 0 0 15px #4CAF50, 0 0 30px #4CAF50", // Verde
-          ],
+          boxShadow: [],
         }}
         transition={{
           duration: 2,
@@ -70,9 +66,8 @@ const Hero = () => {
         <p className="neonText text-xs font-quick uppercase mb-6 text-primary-green font-semibold">
           Somente por tempo limitado
         </p>
-        <h2 className="">Colonial</h2>
-        <h2 className="">Black</h2>
-        <p className="neonText text-[4rem] left-[11.5rem] -mb-[12rem] lg:text-[5rem]  2xl:text-[6rem] font-cookie text-primary-green absolute  md:left-[13rem] md:-mb-[14rem] lg:left-[18rem] lg:-mb-[12rem]  -rotate-[20deg]">
+        <h2 className="neonTextLight relative z-20">Colonial Black</h2>
+        <p className="neonText text-[4rem] left-[16rem] -mb-[12rem] sm:left-[26rem] sm:-mb-[7rem] lg:text-[5rem]  2xl:text-[6rem]  md:left-[27rem] md:-mb-[7rem] lg:left-[29rem] lg:-mb-[7rem] 2xl:left-[33rem] 2xl:-mb-[9rem] z-20 -rotate-[20deg] font-cookie text-primary-green absolute">
           Ofertas
         </p>
       </motion.div>
