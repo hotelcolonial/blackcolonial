@@ -67,7 +67,7 @@ const Hero = () => {
           Somente por tempo limitado
         </p>
         <h2 className="neonTextLight relative z-20">Colonial Black</h2>
-        <p className="neonText text-[4rem] left-[11rem] -mb-[12rem] sm:left-[26rem] sm:-mb-[7rem] lg:text-[5rem]  2xl:text-[6rem]  md:left-[27rem] md:-mb-[7rem] lg:left-[29rem] lg:-mb-[7rem] 2xl:left-[33rem] 2xl:-mb-[9rem] z-20 -rotate-[20deg] font-cookie text-primary-green absolute">
+        <p className="neonText text-[4rem] left-[12rem] -mb-[11rem] sm:left-[26rem] sm:-mb-[7rem] lg:text-[5rem]  2xl:text-[6rem]  md:left-[27rem] md:-mb-[7rem] lg:left-[29rem] lg:-mb-[7rem] 2xl:left-[33rem] 2xl:-mb-[9rem] z-20 -rotate-[20deg] font-cookie text-primary-green absolute">
           Ofertas
         </p>
       </motion.div>
@@ -75,7 +75,7 @@ const Hero = () => {
         <div className="text-center text-gray-300 space-y-2 uppercase font-bold text-2xl 2xl:text-4xl">
           <p className="">
             Ofertas Incríveis, <span className="text-primary-green">Sem</span>{" "}
-            Truques
+            Truques!
           </p>
           <p className="text-base 2xl:text-2xl bg-primary-green px-3 mx-auto">
             Venha aproveitar a autenticidade das nossas ofertas

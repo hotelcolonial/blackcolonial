@@ -16,11 +16,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <GoogleTagManager gtmId="K3T2D6VZ" />
+      <GoogleTagManager gtmId="GTM-K3T2D6VZ" />
       <body>
         <noscript>
           <iframe
-            src="https://www.googletagmanager.com/ns.html?id=K3T2D6VZ"
+            src="https://www.googletagmanager.com/ns.html?id=GTM-K3T2D6VZ"
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
