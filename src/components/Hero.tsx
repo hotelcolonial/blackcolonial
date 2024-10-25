@@ -75,7 +75,7 @@ const Hero = () => {
         <div className="text-center text-gray-300 space-y-2 uppercase font-bold text-2xl 2xl:text-4xl">
           <p className="">
             Ofertas Incríveis, <span className="text-primary-green">Sem</span>{" "}
-            Truques!
+            Truques
           </p>
           <p className="text-base 2xl:text-2xl bg-primary-green px-3 mx-auto">
             Venha aproveitar a autenticidade das nossas ofertas
