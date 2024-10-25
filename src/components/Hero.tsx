@@ -67,7 +67,7 @@ const Hero = () => {
           Somente por tempo limitado
         </p>
         <h2 className="neonTextLight relative z-20">Colonial Black</h2>
-        <p className="neonText text-[4rem] left-[16rem] -mb-[12rem] sm:left-[26rem] sm:-mb-[7rem] lg:text-[5rem]  2xl:text-[6rem]  md:left-[27rem] md:-mb-[7rem] lg:left-[29rem] lg:-mb-[7rem] 2xl:left-[33rem] 2xl:-mb-[9rem] z-20 -rotate-[20deg] font-cookie text-primary-green absolute">
+        <p className="neonText text-[4rem] left-[11rem] -mb-[12rem] sm:left-[26rem] sm:-mb-[7rem] lg:text-[5rem]  2xl:text-[6rem]  md:left-[27rem] md:-mb-[7rem] lg:left-[29rem] lg:-mb-[7rem] 2xl:left-[33rem] 2xl:-mb-[9rem] z-20 -rotate-[20deg] font-cookie text-primary-green absolute">
           Ofertas
         </p>
       </motion.div>
