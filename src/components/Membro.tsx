@@ -52,7 +52,7 @@ const Membro = () => {
                 </Link>
               </div>
             </div>
-            <div className="lg:w-1/2 xl:w-3/5 dark:bg-gray-100">
+            <div className="lg:w-1/2 xl:w-3/5">
               <div className="flex items-center justify-center p-4 md:p-8 lg:p-12">
                 <Image
                   src="/kindpng_1616862.png"

@@ -65,12 +65,12 @@ const Benefits: React.FC = () => {
 
   return (
     <div className="padding-container font-raleway flex justify-center items-center background-pattern-secondary">
-      <section className="text-gray-300 p-6 dark:bg-gray-100 dark:text-gray-800 xl">
+      <section className="text-gray-300 p-6 xl">
         <div className="container mx-auto">
-          <span className="block mb-2 text-xs font-medium tracking-widest text-center uppercase dark:text-violet-600">
+          <span className="block mb-2 text-xs font-medium tracking-widest text-center uppercase">
             Benefícios de ser membro
           </span>
-          <h2 className="text-4xl lg:text-5xl xl:w-3/5 mx-auto font-black text-center dark:text-gray-900">
+          <h2 className="text-4xl lg:text-5xl xl:w-3/5 mx-auto font-black text-center">
             Descubra as vantagens de ser parte do{" "}
             <span className="text-primary-green">Colonial Black</span>
           </h2>
@@ -84,7 +84,7 @@ const Benefits: React.FC = () => {
                   whileInView="visible"
                   viewport={{ once: true, amount: 0.3 }}
                   variants={cardVariants}
-                  className="shadow-[0_0_2px_#006039,inset_0_0_2px_#006039,0_0_5px_#006039,0_0_15px_#006039,0_0_30px_#006039] flex flex-col p-8 space-y-4 rounded-md dark:bg-gray-50 relative bg-primary-black z-40"
+                  className="shadow-[0_0_2px_#006039,inset_0_0_2px_#006039,0_0_5px_#006039,0_0_15px_#006039,0_0_30px_#006039] flex flex-col p-8 space-y-4 rounded-md relative bg-primary-black z-40"
                 >
                   <p className="md:text-2xl lg:text-[2rem] xl:text-4xl font-black">
                     {card.title}
