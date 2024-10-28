@@ -13,7 +13,7 @@ const Form = () => {
             E tenha acesso às melhores promoções e descontos exclusivos!
           </p>
         </div>
-        <div className="mx-auto h-[23.5rem] lg:h-[10rem]">
+        <div className="mx-auto h-[23.5rem] md:h-[10rem]">
           <iframe src="/cadastro.html" width="100%" height="100%"></iframe>
           <p className="text-center lg:w-3/5 text-xs mx-auto">
             Ao enviar este formulário, você autoriza o uso dos seus dados para
