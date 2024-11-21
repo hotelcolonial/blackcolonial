@@ -17,7 +17,7 @@ const ShowCountdown: React.FC<CountdownProps> = ({ time, label }) => {
 
 const CountdownTimer: React.FC = () => {
   // Fecha objetivo: 28 de noviembre de 2024
-  const targetDate = new Date("2024-11-28T00:00:00");
+  const targetDate = new Date("2024-11-29T12:00:00");
 
   const [timeRemaining, setTimeRemaining] = useState<number>(0);
   const [isClient, setIsClient] = useState<boolean>(false);
