@@ -6,7 +6,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   // Título para SEO y la pestaña del navegador
-  title: "Black Friday 2026 Hotel em Foz do Iguaçu | Hotel Colonial Iguaçu",
+  title: "Black Friday 2026 Hotel em Foz do Iguaçu",
 
   // Descripción para los resultados de búsqueda
   description:
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
   // Palabras clave relevantes
   keywords: [
-    "Black Friday 2026",
+    "Black Friday 2026 em Foz do Iguaçu",
     "hotel Foz do Iguaçu",
     "ofertas de hotel",
     "promoção de hotel",
@@ -80,7 +80,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="pt" className="scroll-smooth">
       <Analytics />
       <GoogleTagManager gtmId="GTM-W9B9B6D" />
       <body>

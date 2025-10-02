@@ -66,7 +66,7 @@ const Hero = () => {
         <p className="neonText text-xs font-quick uppercase mb-6 text-primary-green font-semibold">
           Somente por tempo limitado
         </p>
-        <h2 className="neonTextLight relative z-20">Colonial Black</h2>
+        <h1 className="neonTextLight relative z-20">Colonial Black</h1>
         <p className="neonText text-[4rem] left-[12rem] -mb-[11rem] sm:left-[26rem] sm:-mb-[7rem] lg:text-[5rem]  2xl:text-[6rem]  md:left-[27rem] md:-mb-[7rem] lg:left-[29rem] lg:-mb-[7rem] 2xl:left-[33rem] 2xl:-mb-[9rem] z-20 -rotate-[20deg] font-cookie text-primary-green absolute">
           Ofertas
         </p>
