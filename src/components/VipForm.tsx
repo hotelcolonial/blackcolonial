@@ -50,7 +50,10 @@ const VipForm = () => {
 
   return (
     // Contenedor principal con fondo oscuro y padding
-    <div className="bg-black w-full pt-2 py-12 px-4 font-['Raleway',_sans-serif]">
+    <div
+      id="formulario"
+      className="bg-black w-full pt-2 py-12 px-4 font-['Raleway',_sans-serif]"
+    >
       <div className="max-w-4xl mx-auto text-center">
         {/* Título Principal */}
         <h2 className="text-[32px] md:text-3xl font-extrabold text-white">
@@ -82,6 +85,7 @@ const VipForm = () => {
                 className="w-full bg-black text-xs text-gray-300 p-3 outline-none border-none
                            shadow-[inset_0_0_2px_#006039,0_0_5px_#006039,0_0_15px_#006039]
                            focus:ring-2 focus:ring-green-500 transition-shadow duration-300"
+                required
               />
             </div>
 
@@ -101,6 +105,7 @@ const VipForm = () => {
                 className="w-full bg-black text-xs text-gray-300 p-3 outline-none border-none
                            shadow-[inset_0_0_2px_#006039,0_0_5px_#006039,0_0_15px_#006039]
                            focus:ring-2 focus:ring-green-500 transition-shadow duration-300"
+                required
               />
             </div>
 
@@ -120,6 +125,7 @@ const VipForm = () => {
                 className="w-full bg-black text-gray-300 text-xs p-3 outline-none border-none
                            shadow-[inset_0_0_2px_#006039,0_0_5px_#006039,0_0_15px_#006039]
                            focus:ring-2 focus:ring-green-500 transition-shadow duration-300"
+                required
               />
             </div>
           </div>
