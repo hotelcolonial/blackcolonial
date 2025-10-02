@@ -1,8 +1,7 @@
 import Hero from "@/components/Hero";
 import Benefits from "@/components/Benefits";
-
 import Membro from "@/components/Membro";
-import Form from "@/components/Form";
+import VipForm from "@/components/VipForm";
 
 export default function Home() {
   return (
@@ -10,10 +9,10 @@ export default function Home() {
       <Hero />
       <Membro />
       <Benefits />
-      <Form />
+      <VipForm />
       <footer className="">
         <p className="text-center font-raleway bg-primary-black text-xs py-10 text-gray-300">
-          Hotel Colonial Iguaçu | 2024
+          Hotel Colonial Iguaçu | 2025
         </p>
       </footer>
     </div>
