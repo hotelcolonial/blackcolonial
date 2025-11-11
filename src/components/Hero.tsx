@@ -44,7 +44,7 @@ const Hero = () => {
       <div className="absolute w-full h-full z-20 hidden md:block">
         <BalloonBackground />
       </div>{" "}
-      <div className="h-[9rem] w-[9rem] relative z-20">
+      <div className="h-[6rem] w-[6rem] relative z-20">
         <Image
           alt="Hotel Colonial Logo"
           width={150}

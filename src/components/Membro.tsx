@@ -13,9 +13,9 @@ const Membro = () => {
                 <span className="text-primary-green">Colonial Black</span>
               </h2>
               <p className="text-sm">
-                Ao se juntar ao nosso grupo VIP exclusivo no WhatsApp, você
-                desbloqueia muito mais do que apenas ofertas e descontos –
-                garantimos total transparência em todas as nossas promoções.{" "}
+                Ao se juntar ao nosso grupo VIP, você desbloqueia muito mais do
+                que apenas ofertas e descontos – garantimos total transparência
+                em todas as nossas promoções.{" "}
               </p>
               <div>
                 <h2 className="text-lg lg:text-2xl xl:text-3xl font-black pb-3">

@@ -26,38 +26,35 @@ const cardVariants: Variants = {
 const Benefits: React.FC = () => {
   const cards: CardProps[] = [
     {
-      title: "Ofertas Exclusivas",
+      title: "Sua Comodidade em Primeiro Lugar",
       content: (
         <>
-          Acesse uma variedade de <b>descontos únicos</b> que estão disponíveis
-          apenas para os membros do{" "}
-          <span className="neonText">Colonial Black</span>. Aproveite promoções
-          que não são encontradas em nenhum outro lugar e economize de maneira
-          significativa em suas compras.
+          Sua única tarefa no dia 28 de Novembro é relaxar. Nós cuidaremos de
+          tudo: te enviaremos um <b>alerta amigável</b> com o link direto assim
+          que as ofertas do <span className="neonText">Colonial Black</span>{" "}
+          estiverem no ar. Sem estresse, sem precisar lembrar.
         </>
       ),
     },
     {
-      title: "Promoções Antecipadas",
+      title: "A Vantagem do Planejador",
       content: (
         <>
-          Seja o primeiro a receber informações sobre nossas ofertas e promoções
-          especiais antes de todos. Fique à frente e aproveite as melhores
-          oportunidades de descontos e vantagens exclusivas, disponível apenas
-          para quem está inscrito em nossa lista de antecipação.
+          As datas mais desejadas, como feriados e fins de semana, são
+          naturalmente as primeiras a serem escolhidas. Ao se cadastrar, você se
+          posiciona para <b>ter a primeira escolha</b>, garantindo a viagem dos
+          seus sonhos na data que você realmente quer, com total tranquilidade.
         </>
       ),
     },
     {
-      title: "Códigos Promocionais",
+      title: "Vantagens o Ano Inteiro",
       content: (
         <>
-          Receba códigos promocionais exclusivos diretamente em nosso{" "}
-          <span className="neonText">grupo de Whatsapp</span>, garantindo
-          descontos adicionais em suas compras. Esses códigos especiais são a
-          chave para economizar ainda mais em seus produtos favoritos, válidos
-          por tempo limitado e acessíveis apenas para nossos clientes mais
-          leais.
+          A festa não acaba em Novembro! Ao entrar para a lista, você se torna
+          um cliente especial e passa a receber, em primeira mão, nossas{" "}
+          <b>melhores promoções</b>, pacotes de feriados e ofertas surpresa
+          durante todo o ano.
         </>
       ),
     },
@@ -68,11 +65,11 @@ const Benefits: React.FC = () => {
       <section className="text-gray-300 p-6 xl">
         <div className="container mx-auto">
           <span className="block mb-2 text-xs font-medium tracking-widest text-center uppercase">
-            Benefícios de ser membro
+            VANTAGENS DE ESTAR NA LISTA
           </span>
           <h2 className="text-4xl lg:text-5xl xl:w-3/5 mx-auto font-black text-center">
-            Descubra as vantagens de ser parte do{" "}
-            <span className="text-primary-green">Colonial Black</span>
+            Planeje sua viagem com inteligência e{" "}
+            <span className="text-primary-green">aproveite mais</span>
           </h2>
           <div className="grid gap-6 my-16 lg:grid-cols-3 xl:w-4/5 mx-auto">
             {cards.map((card, index) => (
@@ -101,5 +98,4 @@ const Benefits: React.FC = () => {
     </div>
   );
 };
-
 export default Benefits;
