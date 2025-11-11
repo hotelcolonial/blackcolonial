@@ -149,7 +149,7 @@ const VipForm = () => {
 
       {isModalOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4 successForm"
+          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4 success-form"
           onClick={() => setIsModalOpen(false)}
         >
           <div
