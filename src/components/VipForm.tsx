@@ -3,51 +3,6 @@
 import { useState } from "react";
 
 const VipForm = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [modalMessage, setModalMessage] = useState({ title: "", body: "" });
-  const [isLoading, setIsLoading] = useState(false);
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setIsLoading(true);
-
-    // URL que copiaste de Google Apps Script
-    const scriptURL =
-      "https://script.google.com/macros/s/AKfycbxuoG4DHuB1zTHALsTViCEnJDsNV00ta8-rNRX7w6SUQ9_6jheTXeg5JT8h8Xe0Dcn3rQ/exec";
-
-    const form = e.target as HTMLFormElement;
-    const formData = new FormData(form);
-
-    try {
-      const response = await fetch(scriptURL, {
-        method: "POST",
-        body: formData,
-      });
-
-      // Google Apps Script no devuelve un status.ok, pero podemos verificar la respuesta
-      const result = await response.json();
-
-      if (result.result === "success") {
-        setModalMessage({
-          title: "Inscrição Recebida!",
-          body: "Obrigado por se inscrever! Fique de olho no seu e-mail e telefone para receber nossas ofertas VIP exclusivas.",
-        });
-        form.reset(); // Limpia el formulario
-      } else {
-        throw new Error("Hubo un error al registrar los datos.");
-      }
-    } catch (error) {
-      console.error("Error!", error);
-      setModalMessage({
-        title: "Erro no Envio",
-        body: "Não foi possível completar sua inscrição. Por favor, tente novamente mais tarde.",
-      });
-    } finally {
-      setIsLoading(false);
-      setIsModalOpen(true);
-    }
-  };
-
   return (
     // Contenedor principal con fondo oscuro y padding
     <div
@@ -55,120 +10,67 @@ const VipForm = () => {
       className="bg-black w-full pt-2 py-12 px-4 font-['Raleway',_sans-serif]"
     >
       <div className="max-w-4xl mx-auto text-center">
-        {/* Título Principal */}
-        <h2 className="text-[32px] md:text-3xl font-extrabold text-white">
-          Inscreva-se
+        {/* Título */}
+        <h2 className="text-[32px] md:text-3xl font-extrabold text-white uppercase tracking-wider">
+          Inscrições Encerradas
         </h2>
 
-        {/* Subtítulo */}
-        <p className="text-gray-200 mt-3 mb-10">
-          E tenha acesso às melhores promoções e descontos exclusivos!
-        </p>
+        {/* Separador decorativo */}
+        <div className="w-24 h-1 bg-[#006039] mx-auto my-6 rounded-full shadow-[0_0_10px_#006039]"></div>
 
-        {/* El tag <form> se usa para estructura, pero no tiene funcionalidad de envío */}
-        <form onSubmit={handleSubmit} className="w-full">
-          {/* Grid para los campos de entrada. Es 1 columna en móvil y 3 en escritorio */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {/* Campo 1: Nombre */}
-            <div>
-              <label
-                htmlFor="name"
-                className="block text-left text-md text-white font-semibold mb-2"
-              >
-                Nome
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Nome"
-                className="w-full bg-black text-xs text-gray-300 p-3 outline-none border-none
-                           shadow-[inset_0_0_2px_#006039,0_0_5px_#006039,0_0_15px_#006039]
-                           focus:ring-2 focus:ring-green-500 transition-shadow duration-300"
-                required
-              />
-            </div>
+        {/* Caja de Mensaje */}
+        <div className="bg-[#0a0a0a] border border-[#333] p-8 md:p-12 rounded-lg shadow-[0_0_20px_rgba(0,96,57,0.2)] max-w-2xl mx-auto relative overflow-hidden">
+          {/* Efecto de fondo sutil */}
+          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#006039] to-transparent opacity-50"></div>
 
-            {/* Campo 2: Teléfono */}
-            <div>
-              <label
-                htmlFor="phone"
-                className="block text-left text-white font-semibold mb-2"
-              >
-                Telefone
-              </label>
-              <input
-                type="text"
-                id="phone"
-                name="phone"
-                placeholder="Telefone"
-                className="w-full bg-black text-xs text-gray-300 p-3 outline-none border-none
-                           shadow-[inset_0_0_2px_#006039,0_0_5px_#006039,0_0_15px_#006039]
-                           focus:ring-2 focus:ring-green-500 transition-shadow duration-300"
-                required
-              />
-            </div>
+          <div className="flex flex-col items-center justify-center space-y-4">
+            {/* Icono */}
+            <div className="text-4xl mb-2">🔒</div>
 
-            {/* Campo 3: Email */}
-            <div>
-              <label
-                htmlFor="email"
-                className="block text-left text-white font-semibold mb-2"
-              >
-                Email
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="E-mail"
-                className="w-full bg-black text-gray-300 text-xs p-3 outline-none border-none
-                           shadow-[inset_0_0_2px_#006039,0_0_5px_#006039,0_0_15px_#006039]
-                           focus:ring-2 focus:ring-green-500 transition-shadow duration-300"
-                required
-              />
-            </div>
-          </div>
-
-          {/* Botón de envío */}
-          <button
-            type="submit"
-            disabled={isLoading} // Deshabilita el botón mientras se envía
-            className="w-full bg-[#006039] text-gray-300 font-medium uppercase py-2 mt-8 rounded-md hover:bg-green-700 transition-colors duration-300 disabled:bg-gray-600 disabled:cursor-not-allowed"
-          >
-            {isLoading ? "Enviando..." : "Quero Receber Ofertas VIP!"}
-          </button>
-        </form>
-
-        {/* Texto de aviso legal */}
-        <p className="text-xs text-gray-100 mt-6">
-          Ao enviar este formulário, você autoriza o uso dos seus dados para que
-          possamos entrar em contato sobre promoções e comunicações de marketing
-        </p>
-      </div>
-
-      {isModalOpen && (
-        <div
-          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4 success-form"
-          onClick={() => setIsModalOpen(false)}
-        >
-          <div
-            className="bg-black w-full max-w-md p-8 rounded-lg text-center relative border border-green-800 shadow-[0_0_5px_#006039,0_0_25px_#006039]"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <h3 className="text-3xl font-bold text-white mb-4">
-              {modalMessage.title}
+            <h3 className="text-xl md:text-2xl font-bold text-gray-200">
+              A Lista VIP já foi fechada
             </h3>
-            <p className="text-gray-300 mb-8">{modalMessage.body}</p>
-            <button
-              onClick={() => setIsModalOpen(false)}
-              className="bg-[#006039] text-gray-300 font-medium uppercase py-2 px-8 rounded-md hover:bg-green-700 transition-colors duration-300"
+
+            <p className="text-gray-400 text-sm md:text-base leading-relaxed max-w-lg mb-4">
+              Infelizmente, não é mais possível se cadastrar na nossa lista de
+              antecipação.
+            </p>
+
+            {/* --- SECCIÓN CLAVE --- */}
+            <div className="w-full py-6 border-t border-dashed border-[#333]">
+              <p className="text-[#4ade80] font-bold text-lg md:text-xl animate-pulse mb-2">
+                Mas não se preocupe!
+              </p>
+
+              <p className="text-gray-300 text-sm uppercase tracking-widest mb-1">
+                Fique de olho no site no dia
+              </p>
+
+              {/* FECHA GRANDE */}
+              <p className="text-3xl md:text-5xl font-black text-white my-3 drop-shadow-[0_0_10px_rgba(255,255,255,0.3)]">
+                28 DE NOVEMBRO
+              </p>
+
+              <p className="text-gray-300 mt-2">
+                Teremos promoções para todos por:
+              </p>
+
+              {/* DURACIÓN 24H RESALTADA */}
+              <span className="inline-block mt-2 px-4 py-1 bg-red-900/30 border border-red-600/50 text-red-500 font-extrabold text-xl rounded uppercase tracking-wider shadow-[0_0_15px_rgba(220,38,38,0.2)]">
+                APENAS 24 HORAS
+              </span>
+            </div>
+
+            {/* Botón con Redirección */}
+            <a
+              href="https://www.hotelcolonialfoz.com.br"
+              className="mt-4 px-8 py-3 bg-[#111] border border-[#006039] text-[#006039] hover:bg-[#006039] hover:text-white transition-all duration-300 rounded uppercase font-bold text-sm tracking-widest inline-block text-center"
             >
-              Fechar
-            </button>
+              Acessar Site Oficial
+            </a>
           </div>
         </div>
-      )}
+      </div>
     </div>
   );
 };
